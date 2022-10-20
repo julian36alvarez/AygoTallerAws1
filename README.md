@@ -13,6 +13,19 @@
 ![image](https://user-images.githubusercontent.com/31891276/196974905-d1b3815c-9189-4ec3-b4fc-c6a6b5f84ba8.png)
 
 
++ Se crea una instancia en AWS EC2 tipo t2 micro. 
+
++ Se usa NGINX para el equilibrio de carga, ya que se distribuye el tráfico a los diferentes servicios. 
+
++ La estrategia usada para el balanceo es RoundRobin, ya que es el método predeterminado por NGINX , de esta manera las solicitudes se distribuyen uniformemente a los servicios LogService. 
+
++ Se crea un API sencilla usando Java y Spark que genera un UUID String y la fecha de creación. 
+
++ El servicio se encarga de almacenar las peticiones y retorna un objeto JSON con las 10 ultimas cadenas y su fecha de creación 
+
++ Los servicios se distribuyen en contenedores que almacenan toda la información en una misma base datos Monogo que también se encuentra en un contenedor Docker. 
+
+
 ##  Imágenes para desplegar.
 ### Local
     docker-compose up -d
