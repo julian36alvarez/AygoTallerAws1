@@ -27,11 +27,11 @@
  2- Ingresar a la consola de la instancia
 
 
-    ![image](https://user-images.githubusercontent.com/31891276/196960137-f0bb5ea3-a78a-4384-94d4-d956c6d0e77a.png)
+   ![image](https://user-images.githubusercontent.com/31891276/196960137-f0bb5ea3-a78a-4384-94d4-d956c6d0e77a.png)
     
  3- Crear imágenes en aws ec2    
 
-    ![image](https://user-images.githubusercontent.com/31891276/196960317-1b695b66-0b2e-4a02-a3af-669303108da8.png)
+   ![image](https://user-images.githubusercontent.com/31891276/196960317-1b695b66-0b2e-4a02-a3af-669303108da8.png)
     
  4- Probar imágenes 
  
