@@ -35,7 +35,8 @@
     
  3- Crear imágenes en aws ec2    
 
-   ![image](https://user-images.githubusercontent.com/31891276/196960317-1b695b66-0b2e-4a02-a3af-669303108da8.png)
+   ![image](https://user-images.githubusercontent.com/31891276/196963413-4bda1ebb-11ad-4989-a992-29d139d4bbc0.png)
+
     
  4- Probar imágenes 
  
