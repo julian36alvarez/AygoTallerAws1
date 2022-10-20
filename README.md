@@ -23,6 +23,10 @@
  
  ![image](https://user-images.githubusercontent.com/31891276/196959987-6c01d608-6d8d-4d03-b747-2cd880602d32.png)
 
+ configurar puertos
+ 
+ ![image](https://user-images.githubusercontent.com/31891276/196962021-496ce547-730c-4e66-9302-3b466a6c59c7.png)
+
 
  2- Ingresar a la consola de la instancia
 
