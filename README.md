@@ -14,8 +14,34 @@
 
 
 ##  Imágenes para desplegar.
-
+### Local
     docker-compose up -d
+    
+### DockerHub construir imagen
+  
+  **LogService**
+  
+    docker pull julian36alvarez/firstsprkwebapprepo:logservice
+  
+  **Nginx**
+  
+    docker pull julian36alvarez/firstsprkwebapprepo:nginx
+    
+  **MongoDB**
+  
+    docker pull mongo:3.6.1
+  
+   ![image](https://user-images.githubusercontent.com/31891276/196970005-e362724f-badd-4701-811d-82854f3f3264.png)
+   
+   
+##  Instancias de los contenedores
+
+    docker run -d -p 34000:6000 --name logservice1 -d julian36alvarez/firstsprkwebapprepo:logservice
+    docker run -d -p 34001:6000 --name logservice2 -d julian36alvarez/firstsprkwebapprepo:logservice
+    docker run -d -p 34002:6000 --name logservice3 -d julian36alvarez/firstsprkwebapprepo:logservice
+    docker run -d -p 34009:5100 --name nginx -d julian36alvarez/firstsprkwebapprepo:nginx
+    docker run -d -p 27017:27017 --name mongo  mongo:3.6.1 
+
 
 ## Pruebas
  
