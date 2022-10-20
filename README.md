@@ -10,7 +10,7 @@
     
 ## Arquitectura
 
-![image](https://user-images.githubusercontent.com/31891276/196958639-8c6a09c6-8cf8-4372-9f39-d739f99ea8fc.png)
+![image](https://user-images.githubusercontent.com/31891276/196974905-d1b3815c-9189-4ec3-b4fc-c6a6b5f84ba8.png)
 
 
 ##  Imágenes para desplegar.
