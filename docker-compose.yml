@@ -1,0 +1,54 @@
+version: '2'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Nginx.Dockerfile
+    depends_on:
+      - logservice1
+      - logservice2
+      - logservice3
+    ports:
+      - "34009:5100"
+  logservice1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: logservice1
+    ports:
+      - "34000:6000"
+
+  logservice2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: logservice2
+    ports:
+      - "34001:6000"
+    environment:
+      - SPARK_DRIVER_MEMORY=1g
+      - SPARK_EXECUTOR_MEMORY=1g
+  logservice3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: logservice3
+    ports:
+      - "34002:6000"
+    environment:
+      - SPARK_DRIVER_MEMORY=1g
+      - SPARK_EXECUTOR_MEMORY=1g
+  db:
+    image: mongo:3.6.1
+    container_name: mongoDB
+    volumes:
+      - mongodb:/data/db
+      - mongodb_config:/data/configdb
+    ports:
+      - 27017:27017
+    command: mongod
+
+volumes:
+  mongodb:
+  mongodb_config:
