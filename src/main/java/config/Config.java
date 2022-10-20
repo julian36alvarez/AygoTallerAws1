@@ -27,8 +27,8 @@ public final class Config {
         return SparkSession.builder()
                 .master("local")
                 .appName("MongoSparkConnectorIntro")
-                .config("spark.mongodb.input.uri", "mongodb://54.224.131.70:27017/test.aygo")
-                .config("spark.mongodb.output.uri", "mongodb://54.224.131.70:27017/test.aygo")
+                .config("spark.mongodb.input.uri", "mongodb://52.201.212.153:27017/test.aygo")
+                .config("spark.mongodb.output.uri", "mongodb://52.201.212.153:27017/test.aygo")
                 .getOrCreate();
     }
 
